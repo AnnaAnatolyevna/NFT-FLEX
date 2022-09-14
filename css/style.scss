@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:300,regular,600);
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  max-width: 1440px;
+  height: 100%;
+  background: #0d192c;
+  margin: 0 auto;
+  font-family: Outfit, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8bacd9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    width: 350px;
+    height: 596px;
+    background: #15263f;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    border-radius: 15px;
+    padding: 24px 24px 32px;
+
+    &_picture {
+      width: 302px;
+      height: 302px;
+      border-radius: 8px;
+      background-image: url(../images/image-equilibrium.jpg);
+      background-size: cover;
+      background-color: #0d326a;
+      margin-bottom: 24px;
+      .card_picture-bgcolor {
+        width: inherit;
+        height: inherit;
+        background: rgba(0, 255, 247, 0.5);
+        border-radius: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+      }
+    }
+    &_picture:hover .card_picture-bgcolor {
+      display: flex;
+      cursor: pointer;
+    }
+    &_content {
+      h1 {
+        font-size: 22px;
+        line-height: 28px;
+
+        margin-bottom: 16px;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #00fff8;
+        }
+      }
+      p {
+        line-height: 26px;
+        //color: #8bacd9;
+        font-weight: 300;
+        margin-bottom: 24px;
+      }
+    }
+    .card_info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      line-height: 20px;
+      border-bottom: 1px solid #2e405a;
+      padding-bottom: 24px;
+      margin-bottom: 16px;
+    }
+    .card_info-price {
+      font-weight: 600;
+      color: #00fff8;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 7px;
+      }
+    }
+    .card_info-term {
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 8px;
+      }
+    }
+    .card_author {
+      display: flex;
+      align-items: center;
+
+      .card_author-avatar {
+        border: 1px solid #ffffff;
+        width: 33px;
+        height: 33px;
+        margin-right: 16px;
+        background-image: url(../images/image-avatar.png);
+        background-size: cover;
+        border-radius: 50%;
+      }
+      .card_author-name {
+        font-size: 16px;
+        line-height: 20px;
+        span {
+          color: #fff;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+          //a:hover {
+          //  color: #00fff8;
+          //}
+          a:active {
+            color: #00fff8;
+          }
+        }
+      }
+    }
+  }
+}

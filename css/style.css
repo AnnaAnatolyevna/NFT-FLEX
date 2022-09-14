@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:300,regular,600);
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  max-width: 1440px;
+  height: 100%;
+  background: #0d192c;
+  margin: 0 auto;
+  font-family: Outfit, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8bacd9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .card {
+  width: 350px;
+  height: 596px;
+  background: #15263f;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+  padding: 24px 24px 32px;
+}
+.box .card_picture {
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+  background-color: #0d326a;
+  margin-bottom: 24px;
+}
+.box .card_picture .card_picture-bgcolor {
+  width: inherit;
+  height: inherit;
+  background: rgba(0, 255, 247, 0.5);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.box .card_picture:hover .card_picture-bgcolor {
+  display: flex;
+  cursor: pointer;
+}
+.box .card_content h1 {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.box .card_content h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+.box .card_content h1 a:hover {
+  color: #00fff8;
+}
+.box .card_content p {
+  line-height: 26px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+.box .card .card_info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 20px;
+  border-bottom: 1px solid #2e405a;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+}
+.box .card .card_info-price {
+  font-weight: 600;
+  color: #00fff8;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.box .card .card_info-price img {
+  margin-right: 7px;
+}
+.box .card .card_info-term {
+  display: flex;
+  align-items: center;
+}
+.box .card .card_info-term img {
+  margin-right: 8px;
+}
+.box .card .card_author {
+  display: flex;
+  align-items: center;
+}
+.box .card .card_author .card_author-avatar {
+  border: 1px solid #ffffff;
+  width: 33px;
+  height: 33px;
+  margin-right: 16px;
+  background-image: url(../images/image-avatar.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+.box .card .card_author .card_author-name {
+  font-size: 16px;
+  line-height: 20px;
+}
+.box .card .card_author .card_author-name span {
+  color: #fff;
+}
+.box .card .card_author .card_author-name span a {
+  color: #fff;
+  text-decoration: none;
+}
+.box .card .card_author .card_author-name span a:active {
+  color: #00fff8;
+}/*# sourceMappingURL=style.css.map */
